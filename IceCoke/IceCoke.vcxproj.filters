@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="IceCokeApp.h" />
+    <ClInclude Include="Action\Action.h">
+      <Filter>Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Action\ActionContext.h">
+      <Filter>Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Action\ActionFactory.h">
+      <Filter>Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\Singleton.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Action\ActionInitializer.h">
+      <Filter>Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Action\ActionParameter.h">
+      <Filter>Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Setup\ActionFactorySetup.h">
+      <Filter>Setup</Filter>
+    </ClInclude>
+    <ClInclude Include="Scripting\Script.h">
+      <Filter>Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="Scripting\ScriptCompiler.h">
+      <Filter>Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="Scripting\ScriptCompilerDelegate.h">
+      <Filter>Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="IceCokeScriptCompilerDelegate.h" />
+    <ClInclude Include="Scripting\ScriptCompilerError.h">
+      <Filter>Scripting</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="IceCokeApp.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Action\ActionFactory.cpp">
+      <Filter>Action</Filter>
+    </ClCompile>
+    <ClCompile Include="Action\Impl\BreakAction.cpp">
+      <Filter>Action\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="Action\ActionParameter.cpp">
+      <Filter>Action</Filter>
+    </ClCompile>
+    <ClCompile Include="Setup\ActionFactorySetup.cpp">
+      <Filter>Setup</Filter>
+    </ClCompile>
+    <ClCompile Include="Scripting\Script.cpp">
+      <Filter>Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="Scripting\ScriptCompiler.cpp">
+      <Filter>Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="IceCokeScriptCompilerDelegate.cpp" />
+    <ClCompile Include="Scripting\ScriptCompilerError.cpp">
+      <Filter>Scripting</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Action">
+      <UniqueIdentifier>{1e684e0a-34ec-45bb-8069-4e81820eff62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{f3a72445-5f75-4e1f-bc79-dcc676291f23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Action\Impl">
+      <UniqueIdentifier>{5fe16e07-9f4f-4231-b16d-1937fe0832c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Setup">
+      <UniqueIdentifier>{1c942998-f7d4-4c34-ae69-b7cc6bf778e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripting">
+      <UniqueIdentifier>{8a7b4bb7-6771-4603-97de-14e7b60080a7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
