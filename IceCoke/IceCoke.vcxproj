@@ -51,7 +51,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -81,6 +81,9 @@
     <ClInclude Include="Action\ActionFactory.h" />
     <ClInclude Include="Action\ActionInitializer.h" />
     <ClInclude Include="Action\ActionParameter.h" />
+    <ClInclude Include="Curl\CurlExec.h" />
+    <ClInclude Include="Curl\CurlRequest.h" />
+    <ClInclude Include="Curl\CurlResponse.h" />
     <ClInclude Include="IceCokeApp.h" />
     <ClInclude Include="IceCokeScriptCompilerDelegate.h" />
     <ClInclude Include="Scripting\Script.h" />
@@ -94,6 +97,9 @@
     <ClCompile Include="Action\ActionFactory.cpp" />
     <ClCompile Include="Action\ActionParameter.cpp" />
     <ClCompile Include="Action\Impl\BreakAction.cpp" />
+    <ClCompile Include="Curl\CurlExec.cpp" />
+    <ClCompile Include="Curl\CurlRequest.cpp" />
+    <ClCompile Include="Curl\CurlResponse.cpp" />
     <ClCompile Include="IceCokeApp.cpp" />
     <ClCompile Include="IceCokeScriptCompilerDelegate.cpp" />
     <ClCompile Include="main.cpp" />

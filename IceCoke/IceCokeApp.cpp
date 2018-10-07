@@ -1,10 +1,13 @@
 #include <iostream>
 #include <fstream>
+#include <memory>
 
 #include "IceCokeApp.h"
 #include "Setup/ActionFactorySetup.h"
 #include "Scripting/ScriptCompiler.h"
 #include "IceCokeScriptCompilerDelegate.h"
+
+#include "Curl/CurlExec.h"
 
 int IceCokeApp::Run(int argc, char *argv[])
 {
@@ -25,13 +28,10 @@ int IceCokeApp::Run(int argc, char *argv[])
 
 	IceCokeScriptCompilerDelegate delegate(fs);
 	ScriptCompiler compiler(&delegate);
-	Script *script = compiler.Compile();
+	std::auto_ptr<Script> script(compiler.Compile());
 
-	if (script)
-	{
-		script->Run();
-		delete script;
-	}
+	if (!script.get())
+		return EXIT_FAILURE;
 
-	return 0;
+	return script->Run() ? 0 : EXIT_FAILURE;
 }

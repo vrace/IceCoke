@@ -36,6 +36,15 @@
     <ClInclude Include="Scripting\ScriptCompilerError.h">
       <Filter>Scripting</Filter>
     </ClInclude>
+    <ClInclude Include="Curl\CurlExec.h">
+      <Filter>Curl</Filter>
+    </ClInclude>
+    <ClInclude Include="Curl\CurlRequest.h">
+      <Filter>Curl</Filter>
+    </ClInclude>
+    <ClInclude Include="Curl\CurlResponse.h">
+      <Filter>Curl</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="IceCokeApp.cpp" />
@@ -62,6 +71,15 @@
     <ClCompile Include="Scripting\ScriptCompilerError.cpp">
       <Filter>Scripting</Filter>
     </ClCompile>
+    <ClCompile Include="Curl\CurlExec.cpp">
+      <Filter>Curl</Filter>
+    </ClCompile>
+    <ClCompile Include="Curl\CurlRequest.cpp">
+      <Filter>Curl</Filter>
+    </ClCompile>
+    <ClCompile Include="Curl\CurlResponse.cpp">
+      <Filter>Curl</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Action">
@@ -78,6 +96,9 @@
     </Filter>
     <Filter Include="Scripting">
       <UniqueIdentifier>{8a7b4bb7-6771-4603-97de-14e7b60080a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Curl">
+      <UniqueIdentifier>{cd30827a-ddfd-4548-a816-e0c620b2661e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
